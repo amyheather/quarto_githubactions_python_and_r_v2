@@ -11,7 +11,8 @@ RUN apt-get update && \
         gnupg \
         software-properties-common \
         dirmngr \
-        locales && \
+        locales \
+        git && \
     locale-gen en_GB.UTF-8 && \
     rm -rf /var/lib/apt/lists/*
 
