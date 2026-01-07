@@ -5,11 +5,7 @@ title: "Quarto via GitHub actions (w/ Python and R code)"
 ```{r}
 #| include: false
 library(reticulate)
-use_condaenv(
-  "quarto_python_r_v2",
-  conda = Sys.getenv("CONDA_EXE", "/home/amy/mambaforge/bin/conda"),
-  required = TRUE
-)
+use_condaenv("quarto_python_r_v2", required = TRUE)
 ```
 
 ## Python code
