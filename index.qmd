@@ -1,0 +1,24 @@
+---
+title: "Quarto via GitHub actions (w/ Python and R code)"
+---
+
+```{r}
+#| include: false
+library(reticulate)
+use_python("/home/amy/mambaforge/envs/quarto_python_r_v2/bin/python", required = TRUE)
+```
+
+## Python code
+
+```{python}
+import seaborn as sns
+
+sns.displot([0, 1, 2, 3, 4, 5])
+```
+
+## R code.
+
+```{r}
+data(mtcars)
+head(mtcars, 6)
+```
