@@ -81,3 +81,23 @@ To avoid needing to set `RETICULATE_CONDA` every time you open a new terminal, a
 ```
 RETICULATE_CONDA=/home/amy/mambaforge/bin/conda
 ```
+
+## If you want to test out the Docker container locally...
+
+Build image:
+
+```
+sudo docker build -t quarto_python_r_v2 .
+```
+
+View all your Docker images:
+
+```
+sudo docker images
+```
+
+Render quarto project inside the container:
+
+```
+docker run --rm quarto_python_r_v2 quarto render
+```
