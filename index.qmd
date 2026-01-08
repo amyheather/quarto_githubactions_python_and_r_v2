@@ -22,3 +22,10 @@ sns.displot([0, 1, 2, 3, 4, 5])
 data(mtcars)
 head(mtcars, 6)
 ```
+
+```{r}
+library(simmer)
+
+simmer("MyModel") %>%
+  add_resource("MyResource", 1)
+```

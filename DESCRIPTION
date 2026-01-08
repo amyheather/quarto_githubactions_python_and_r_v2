@@ -3,3 +3,4 @@ Imports:
     knitr
     reticulate
     rmarkdown
+    simmer
